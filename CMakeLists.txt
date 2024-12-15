@@ -101,6 +101,8 @@ if ("${CMAKE_C_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_C_COMPILER_ID}" STREQUAL
 endif()
 
 # Find all dependencies
+find_package(OpenSSL REQUIRED)
+find_library(LIBSOUNDIO_LIB soundio)
 add_subdirectory(extern)
 
 # Don't enable testing until after building dependencies
