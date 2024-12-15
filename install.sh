@@ -50,4 +50,6 @@ fi
 echo "Cleaning up .deb files..."
 rm -f libk4a1.4_1.4.2_amd64.deb libk4a1.4-dev_1.4.2_amd64.deb
 
+source ~/.bashrc
+
 echo "Installation completed."
